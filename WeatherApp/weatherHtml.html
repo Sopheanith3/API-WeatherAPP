@@ -4,8 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Worldwide Weather</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined&display=swap">
+
 </head>
 <body>
 
@@ -17,7 +20,7 @@
             </button>
         </header>
 
-        <section class="weather-info">
+        <section class="weather-info" style="display: none">
             <div class="location-date-container">
                 <div class="location">
                     <span class="material-symbols-outlined">
@@ -85,6 +88,30 @@
                 </div>
             </div>
         </section>
+
+        <section class="search-city section-message">
+            <img src="assets/search.png">
+             <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city
+                </h4>
+             </div>
+        </section>
+
+        <section class="not-found section-message" style="display: none;">
+            <img src="assets/unsearch.png">
+             <div>
+                <h1>Search City</h1>
+                <h4 class="regular-txt">
+                    Find out the weather conditions of the city
+                </h4>
+             </div>
+        </section>
+
+
+
+
 
     </main>
 
