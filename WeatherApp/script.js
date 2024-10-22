@@ -14,8 +14,6 @@ const weatherSummaryImg = document.querySelector('.weather-summary-img')
 const currentDataTxt = document.querySelector('.current-data-txt')
 const forecastItemsContainer = document.querySelector('.forecast-items-container')
 
-
-
 const apiKeys = 'f4db0ae4fdce3919fa651fc7362e7134'
 
 seatchBtn.addEventListener('click', () => {
@@ -74,7 +72,7 @@ async function updateWeatherInfo(city) {
         name: country,
         main: {temp, humidity},
         weather: [{id, main}],
-        wind: {speed }
+        wind: {speed },
     } = weatherData
 
     countryTxt.textContent = country
@@ -82,7 +80,7 @@ async function updateWeatherInfo(city) {
     conditionTxt.textContent = main
     humidityValueTxt.textContent = humidity + '%'
     windValueTxt.textContent = speed + ' M/s'
-    weatherSummaryImg.scr = `assets/weather/${getWeatherIcon(id)}`
+    weatherSummaryImg.scr = `assets/weatherIcon/${getWeatherIcon(id)}`
 
 
     currentDataTxt.textContent = getCurrentDate()
